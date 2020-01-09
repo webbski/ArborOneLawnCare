@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title= "ArborOne Lawn Care"
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+      div
+        block header
+          div
+              p.header-content
+        block pagecontent
+          .content-container
+              p.content
+        block links
+          .nav-container
+              p.navbar
+                  span.home-link
+                      a(href='/') Home
+                  span.about-link
+                      a(href='/about') About Us
+                  span.services-link
+                      a(href='/services') Services
+                  span.estimate-link
+                      a(href='/estimate') Request An Estimate
+                  span.photo-link
+                      a(href='/photos') Photo Gallery
+                  span.contact-link
+                      a(href='/contact') Contact Us

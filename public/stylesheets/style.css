@@ -1,0 +1,141 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+.homepage {
+  max-width: 1425px;
+  height: 100%;
+  background-image: url("../images/image3.jpg"), url("../images/image4.jpg");
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.homepage .header-content::after {
+  content: "Welcome to Arbor One Lawn Care";
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.homepage .content-container {
+  height: 65%;
+  background-image: url("../images/image5.png");
+  background-position: center center;
+  background-size: 550px 900px;
+  background-repeat: no-repeat;
+}
+
+.homepage .home-link a {
+  display: none;
+}
+
+.aboutpage .header-content::after {
+  content: "About Us";
+}
+
+.aboutpage .about-link {
+  display: none;
+}
+
+.aboutpage .content-container .content::after{
+  content: "Hello, my name is Noah Webb. I am the owner and founder of Arbor One Lawn Care.  When I was 10 years old I started mowing lawns around the neighborhood so I could make a little bit of money.  As time progressed, I realized I could start my own lawn care business.  Over time I gained valuable experience in both customer service and lawn care and now offer a wide variety of services.  My business has now grown to the point where we carry liability insurance on all of our jobs.";
+}
+
+.servicespage .header-content::after {
+  content: "Services";
+}
+
+.servicespage .services-link {
+  display: none;
+}
+
+.serviceareapage .header-content::after {
+  content: "Service Area";
+}
+
+.serviceareapage .content-container .content::after {
+  content: "We currently are servicing most of Ann Arbor. We service the downtown area, the northside area and the west side of town. Feel free to reach out to us if you are unsure if you are within the service area.";
+}
+
+.estimatepage .header-content::after {
+  content: "Request an Estimate";
+}
+
+.estimatepage .request-link {
+  display: none;
+}
+
+.estimatepage .content-container .content::after {
+  content: "To request an estimate please click here and fill out this form. After the form is submitted you should receive a response to schedule your estimate.";
+}
+
+.photopage .header-content::after {
+  content: "Photo Gallery";
+}
+
+.photopage .photo-link {
+  display: none;
+}
+
+.contactpage .header-content::after {
+  content: "Contact Us";
+}
+
+.contactpage .contact-link {
+  display: none;
+}
+
+.formspage .header-content::after {
+  content: "Forms";
+}
+
+.header-content {
+  color: #fff;
+  line-height: 3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px slategrey;
+  margin: 0 0 -40px 0;
+}
+
+.estimatepage {
+  background-image: url("../images/image1.jpg"), url("../images/image2.jpg");
+  background-position: left top, right top;
+  background-size: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.navbar span {
+  padding: 20px;
+}
+
+.nav-container {
+  margin: auto;
+  width: 75%;
+}
+
+.homepage .nav-container a {
+  color: #fff !important;
+  line-height: 3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+  line-height: 3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
