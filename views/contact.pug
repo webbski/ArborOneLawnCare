@@ -2,21 +2,6 @@ extends layout
 
 block content
     div.contactpage
-        div
-            p.header-content
-        .content-container
-            p.content
-        .nav-container
-            p.navbar
-                span.home-link
-                    a(href='/') Home
-                span.about-link
-                    a(href='/about') About Us
-                span.services-link
-                    a(href='/services') Services
-                span.estimate-link
-                    a(href='/estimate') Request An Estimate
-                span.photo-link
-                    a(href='/photos') Photo Gallery
-                span.contact-link
-                    a(href='/contact') Contact Us
+        include header
+        include pagecontent
+        include links
