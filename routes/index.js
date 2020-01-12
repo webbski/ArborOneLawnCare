@@ -25,10 +25,6 @@ router.get('/photos', function(req, res, next) {
 router.get('/service-area', function(req, res, next) {
   res.render('service-area', { name: 'Service Area' });
 });
-/* GET services page. */
-router.get('/services', function(req, res, next) {
-  res.render('services', { name: 'Services' });
-});
 /* GET forms page. */
 router.get('/forms', function(req, res, next) {
   res.render('forms', { name: 'Forms' });

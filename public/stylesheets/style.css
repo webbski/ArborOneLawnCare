@@ -31,15 +31,20 @@ body, html {
   background-repeat: no-repeat;
 }
 
-.homepage .home-link a {
+.homepage .home-link {
+  padding: 0;
   display: none;
 }
 
 .aboutpage .header-content::after {
   content: "About Us";
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .aboutpage .about-link {
+  padding: 0;
   display: none;
 }
 
@@ -49,14 +54,48 @@ body, html {
 
 .servicespage .header-content::after {
   content: "Services";
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .servicespage .services-link {
+  padding: 0;
   display: none;
+}
+
+.services-table-container {
+  width: 80%;
+  margin-top: 20px;
+  margin: auto;
+}
+
+.services-table-container table {
+  width: 100%;
+  margin: auto;
+}
+
+.services-table-container ul {
+  margin: 0;
+}
+
+.services-table-container td {
+  width: 50%;
+}
+
+.services-table-container a {
+  line-height: 2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .serviceareapage .header-content::after {
   content: "Service Area";
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .serviceareapage .content-container .content::after {
@@ -65,34 +104,101 @@ body, html {
 
 .estimatepage .header-content::after {
   content: "Request an Estimate";
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 10px;
 }
 
-.estimatepage .request-link {
+.estimatepage .estimate-link {
+  padding: 0;
   display: none;
+}
+
+.estimatepage .content-container {
+  width: 700px;
 }
 
 .estimatepage .content-container .content::after {
   content: "To request an estimate please click here and fill out this form. After the form is submitted you should receive a response to schedule your estimate.";
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .photopage .header-content::after {
   content: "Photo Gallery";
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .photopage .photo-link {
+  padding: 0;
   display: none;
 }
 
 .contactpage .header-content::after {
   content: "Contact Us";
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .contactpage .contact-link {
+  padding: 0;
   display: none;
 }
 
 .formspage .header-content::after {
   content: "Forms";
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.mowingpage .header-content::after {
+  content: "Mowing and Weekly Maintenance";
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.mowingpage .content-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.mowingpage .mowing-text-container {
+  width: 66.66%;
+  margin: 0 20px;
+  line-height: 2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+}
+
+.mowingpage .mowing-image-container {
+  width: 33.33%
+}
+
+.springcleanuppage .header-content::after {
+  content: "Spring Clean Up";
+  background-color: lightgray;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.springcleanuppage .content-container {
+  width: 80%;
+  margin: auto;
+  line-height: 2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+
+}
+
+.back-to-services-link {
+  float: right;
 }
 
 .header-content {
@@ -107,7 +213,7 @@ body, html {
 }
 
 .estimatepage {
-  background-image: url("../images/image1.jpg"), url("../images/image2.jpg");
+  background-image: url("../images/image7.jpg"), url("../images/image2.jpg");
   background-position: left top, right top;
   background-size: 50%;
   height: 100%;
@@ -115,7 +221,7 @@ body, html {
 }
 
 .navbar span {
-  padding: 20px;
+  padding: 10px;
 }
 
 .nav-container {
@@ -123,7 +229,7 @@ body, html {
   width: 75%;
 }
 
-.homepage .nav-container a {
+.homepage .nav-container a, .estimatepage .nav-container a {
   color: #fff !important;
   line-height: 3;
   font-family: Arial, Helvetica, sans-serif;
@@ -132,10 +238,37 @@ body, html {
   font-weight: bold;
 }
 
+.header-container {
+  margin-bottom: 10px;
+  height: 100px;
+}
+
+.nav-container a {
+  color: #000 !important;
+  line-height: 3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nav-container .navbar {
+  width: 90%;
+  margin: auto;
+}
+
 .content {
   width: 80%;
   margin: auto;
   line-height: 3;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+}
+
+.spacer20 {
+  margin-top: 20px;
+}
+
+.spacer40 {
+  margin-top: 40px;
 }
